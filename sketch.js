@@ -18,7 +18,7 @@ function setup() {
   trex.scale = 0.5;
   trex.x = 50
   
-  //crie sprite ground (solo)
+  //crie um sprite ground (solo)
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
@@ -34,7 +34,7 @@ function draw() {
     ground.x = ground.width/2;
   }
   
-  //pulando o trex ao pressionar a tecla de espaço
+  //pular quando a tecla espaço for pressionada
   if(keyDown("space")) {
     trex.velocityY = -10;
   }
